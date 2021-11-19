@@ -1,4 +1,6 @@
 # TallerVJ_mecanicas
+# Juego 0
+  - Para el alfa.
 
 # Juego 1  (base)
   - Animaciones
