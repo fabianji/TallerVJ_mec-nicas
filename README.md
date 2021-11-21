@@ -1,5 +1,5 @@
 # TallerVJ_mecanicas
-# Beta V0
+# alfa V0
   - Animaciones
   - Morir por disparos, caida,...
   - Disparar
@@ -27,3 +27,12 @@
   - Ganar al llegar a un punto cuando se tiene dicho objeto.
   - Cambio de escenas
   - ...
+
+# Juego 3
+  -Tutorial unit, contiene videos y mas.
+  -Contiene recolección monedas.
+  -Matar enemigos con salto.
+  -Interfaz mas agradable.
+  -Musica.
+  -Etc. 
+  
