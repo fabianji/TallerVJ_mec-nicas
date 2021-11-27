@@ -6803,6 +6803,8 @@ MonoBehaviour:
   JumpForce: 150
   BulletPrefab: {fileID: 0}
   emparejado: 0
+  esta_con_pareja: 0
+  pareja: {fileID: 2048957787}
 --- !u!95 &1487727644
 Animator:
   serializedVersion: 3
@@ -7270,6 +7272,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2048957787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1841109127762668794, guid: b4ebd4bb61e1b7d4e91a77f4060da491, type: 3}
+  m_PrefabInstance: {fileID: 1349473255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2050468876
 GameObject:
   m_ObjectHideFlags: 0

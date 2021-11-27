@@ -11,7 +11,7 @@ public class JohnMovement : MonoBehaviour
     public bool emparejado = false;
     //public bool encasa = false;
     
-
+    public int esta_con_pareja=0;
     private Rigidbody2D Rigidbody2D;
     private Animator Animator;
     private float Horizontal;
@@ -19,7 +19,7 @@ public class JohnMovement : MonoBehaviour
     //private float LastShoot;
     //private int Health = 5;
     
-    //public GameObject pareja;
+    public GameObject pareja;
 
     private void Start()
     {
@@ -57,6 +57,17 @@ public class JohnMovement : MonoBehaviour
             if (emparejado ==true ) {
                 Debug.Log("Puedes usar tecla 1");
                 //ejecutar set active..
+                esta_con_pareja++;
+                if(esta_con_pareja%2==1)
+                {
+                    pareja.SetActive(false);
+                }
+                else
+                {
+                   pareja.SetActive(true); 
+                }
+
+                
                 //SceneManager.LoadScene(1);
         //-- ejecutar set active  
 

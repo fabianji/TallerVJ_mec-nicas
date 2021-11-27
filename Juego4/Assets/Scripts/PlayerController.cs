@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     public bool canMoveInAir = true;
     // public GameObject gameOverScreen;
     // public GameManager theGameManager;
+    public GameObject obj_afect_por_lentes1;
+    public int cambio_lentes1=0;
+
+    public bool tienelentes1=true; //esto modificarlo empezando en falso
 
 
     float fireRate = 0;
@@ -78,6 +82,25 @@ public class PlayerController : MonoBehaviour
               nextfire = Time.time + nextfire;
               Shooting();
             }
+             if (Input.GetKeyDown(KeyCode.Alpha1) )
+            {
+                if (tienelentes1 ==true )
+                 {
+                    Debug.Log("Puedes usar tecla 1");
+                    //ejecutar set active..
+                    cambio_lentes1++;
+                    if(cambio_lentes1%2==1)
+                    {
+                        obj_afect_por_lentes1.SetActive(false);
+                    }
+                    else
+                    {
+                    obj_afect_por_lentes1.SetActive(true); 
+                    }
+                 }
+
+            }
+
           }
         }
         Vector2 screenPosition = Camera.main.WorldToScreenPoint(transform.position);

@@ -10,16 +10,17 @@
   - Posicion y < __ => morir por caída.
   - ...
 
+# Juego 4 implementar mecánicas de juego 2
 ## Pendientes:
-  - 10 niveles
-  - Lentes cambio mapa.
-  - Doble salto compañero
-  - ...
+  - Crear objeto lentes 1, lentes 2, lentes 3. (como en juego2)
+  - Que se agarren como en el juego 2. Que activen teclas como en juego 2.
+  - Que se desactiven automaticamente al agarrarlos.
 
+  - Agregar objetos que se puedan pisar fijos extras modificables por teclas
 
-# Juego 0
-  - Para el alfa.
-
+  - Cambiar personaje
+  - Implementar 10 niveles.
+  - Mas..
 
 
 # Juego 2   
@@ -28,13 +29,6 @@
   - Cambio de escenas
   - ...
 
-# Juego 3
-  -Tutorial unit, contiene videos y mas.
-  -Contiene recolección monedas.
-  -Matar enemigos con salto.
-  -Interfaz mas agradable.
-  -Musica.
-  -Etc. 
   
 # Juego 4
   -  Es la mejor base para empezar de ahí a agregar mecánicas
