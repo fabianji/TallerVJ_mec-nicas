@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public GameObject obj_afect_por_lentes1;
     public int cambio_lentes1=0;
 
-    public bool tienelentes1=true; //esto modificarlo empezando en falso
+    public bool tienelentes1=false; //esto modificarlo empezando en falso
 
 
     float fireRate = 0;
@@ -55,6 +55,8 @@ public class PlayerController : MonoBehaviour
         facingRight = true;
         //Inisialisasi komponen Animator yang ada pada Player
         anim = GetComponent<Animator>();
+
+        tienelentes1=false;
     }
 
 
@@ -84,7 +86,7 @@ public class PlayerController : MonoBehaviour
             }
              if (Input.GetKeyDown(KeyCode.Alpha1) )
             {
-                if (tienelentes1 ==true )
+                if (tienelentes1 == true )
                  {
                     Debug.Log("Puedes usar tecla 1");
                     //ejecutar set active..
@@ -97,6 +99,9 @@ public class PlayerController : MonoBehaviour
                     {
                     obj_afect_por_lentes1.SetActive(true); 
                     }
+                 }
+                 else{
+                     Debug.Log("No puedes usar tecla 1");
                  }
 
             }
@@ -225,4 +230,14 @@ public class PlayerController : MonoBehaviour
         //NOTE : Sumbu x ini sumbu x yang ada
         //pada Scale yang ada pada komponen Transform
     }
+
+
+
+
+    public void Hit()
+    {
+        tienelentes1 = true;
+        Debug.Log("Agarraste lentes 1");
+    }
+
 }
